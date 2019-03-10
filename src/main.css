@@ -25,6 +25,7 @@
     left: 40px;
     float: left;
     background: #666;
+    margin-bottom: 20px;
   }
 
   #nav {
@@ -48,18 +49,23 @@
   }
 
   #nav li:hover {
-    background: #444;
+    background: #555;
+  }
+
+  #nav li.active{
+    background:#444;
   }
 
   #nav #btnAddTab {
     border: none;
     color: black;
-    background: #999;
+    background: #555;
     width: 20px;
     height: 30px;
     line-height: 30px;
     text-align: center;
     font-size: 20px;
+    color: #eee;
   }
 
   #nav #btnAddTab:hover {
@@ -92,4 +98,13 @@
     background: #444;
     color: #fff;
     font-size: 16px;
+  }
+
+  .footer{
+    position: absolute;
+    height: 20px;
+    background:#127cc9;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
   }

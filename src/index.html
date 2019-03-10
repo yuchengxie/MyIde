@@ -11,21 +11,23 @@
     <div class="left">
       <ul>
         <li><img src="./img/folder.png" alt="#"></li>
-        <li><img src="./img/file.png" alt="#"></li>
+        <li onclick="newFile()"><img src="./img/file.png" alt="#"></li>
         <li><img src="./img/console.png" alt="#"></li>
       </ul>
       
     </div>
     <div class="right">
       <ul id="nav">
-        <li id="btnAddTab" onclick="addTab(this)">+</li>
+        <li id="btnAddTab" onclick="newFile()">+</li>
       </ul>
       <div class="tab-content" id="editors">
       </div>
     </div>
+
+    <div class="footer"></div>
   </div>
 
 </body>
 
 </html>
-<script src="./function.js"></script>
+<script src="./js/main.js"></script>

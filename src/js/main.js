@@ -1,20 +1,28 @@
 let fileCount = 0;
+let currentFileId = 0;
 
 function tabclick(e) {
     let index = e.id.split('_')[2];
+    currentFileId = index;
     for (let i = 1; i <= fileCount; i++) {
         let file_content_index = document.getElementById('file_content_' + i);
-        if(file_content_index.classList.contains('active')){
+        let file_tab_index=document.getElementById('file_tab_'+i);
+        if (file_content_index.classList.contains('active')) {
             file_content_index.classList.remove('active');
         }
-        if(i==index){
-            file_content_index.classList.add('active'); 
+        if(file_tab_index.classList.contains('active')){
+            file_tab_index.classList.remove('active');
+        }
+        if (i == index) {
+            file_content_index.classList.add('active');
+            file_tab_index.classList.add('active');
         }
     }
 }
 
-function addTab(e) {
+function newFile() {
     fileCount++;
+    let e=document.getElementById('btnAddTab');
     let tab = document.createElement('li');
     tab.setAttribute('id', 'file_tab_' + fileCount);
     tab.innerHTML = 'Untitled-' + fileCount;
