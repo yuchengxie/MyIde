@@ -1,6 +1,6 @@
 {
   "name": "test01",
-  "productName": "my notepad",
+  "productName": "MyIDE",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": "src/index.js",
